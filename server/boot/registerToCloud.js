@@ -13,8 +13,10 @@ module.exports = function registerToCloud(app) {
     .set('Accept', 'application/json')
     .set('Content-Type', 'application/json')
     .end(function(err, res) {
-      if (!(err && res.body.error && res.body.error.statusCode === 422)) {
-        throw err;
+      if (err) {
+        if (!(res.body.error && res.body.error.statusCode === 422)) {
+          throw err;
+        }
       }
 
       superagent
