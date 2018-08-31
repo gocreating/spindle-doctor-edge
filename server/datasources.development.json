@@ -1,0 +1,6 @@
+{
+  "memoryDs": {
+    "name": "memoryDs",
+    "connector": "memory"
+  }
+}
