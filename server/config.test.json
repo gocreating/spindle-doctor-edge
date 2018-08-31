@@ -1,0 +1,11 @@
+{
+  "port": 4002,
+  "cloud": {
+    "port": 3002
+  },
+  "remoting": {
+    "rest": {
+      "handleErrors": true
+    }
+  }
+}
