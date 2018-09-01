@@ -41,7 +41,15 @@
     }
   },
   "files": {
-    "loopback#static": {}
+    "loopback#static": [{
+      "name": "client",
+      "paths": ["/client"],
+      "params": "$!../client"
+    }, {
+      "name": "models",
+      "paths": ["/inference-result"],
+      "params": "$!../../spindle-doctor/build/models/edge-server/inference-result"
+    }]
   },
   "files:after": {
     "./middlewares/reactRouter": {}
