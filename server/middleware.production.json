@@ -6,7 +6,7 @@
       "params": "$!../client"
     }, {
       "name": "models",
-      "paths": ["/models"],
+      "paths": ["/inference-result"],
       "params": "$!../../spindle-doctor/build/models/edge-server/inference-result"
     }]
   },
